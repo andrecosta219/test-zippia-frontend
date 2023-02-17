@@ -1,0 +1,20 @@
+.card {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    box-shadow: 2.5px 2.5px 2px #0f0f0f;
+    transition: all 0.5s;
+    
+   
+    
+    
+}
+
+
+
+.card:hover {
+    background-color: #eee;
+    
+}

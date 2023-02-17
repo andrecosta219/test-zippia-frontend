@@ -1,0 +1,65 @@
+/*
+Color pallette used: 
+Black - #2c2c2c
+Blue - #3174ee
+Gray - #8ea2a6
+Orange - #ff6000
+White - #dddddd
+
+*/
+
+
+.header-styles {
+    background-color: #2c2c2c;
+    color: #ddd;
+}
+
+nav .form-control {
+    border-radius: 0;
+    font-size: 1.2em;
+    width: 35%;
+}
+
+#form-left {
+    border-radius: 5px 0 0 5px;
+    width: 50%;
+}
+
+.header-styles li {
+    color: #ddd;
+}
+
+.orange {
+    background-color: #ff6000;
+    color: #fff
+}
+
+
+.button-form {
+    height: 3em;
+    border: none;
+}
+
+.button-form:hover{
+    background-color: #444
+}
+
+nav img {
+    max-height: 2.2em;
+}
+
+
+
+nav .navbar-nav li a{
+    color: #8ea2a6 !important;
+    font-weight: 500 !important;
+    }
+
+    nav .navbar-nav li a:hover{
+        color: #fff !important;
+        }
+
+.dropdown-container {
+    display: block;
+    background-color: #2c2c2c;
+}

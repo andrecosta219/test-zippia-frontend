@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import Jobs from './pages/Jobs';
 import './App.css';
+
+import Header from './components/general/Header';
+
+//I re-routed all possible routes to /test/jobs
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path='/test/jobs' element={<Jobs />} />
+        <Route path='*' element={<Navigate to='/test/jobs' />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.button-panel ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.btn-primary.selected,
+.btn-primary.selected:hover {
+    background-color: #fff;
+    color: #3174ee;
+}
