@@ -37,13 +37,16 @@ const Jobsection = (props) => {
             }
         )
             .then(res => {
-                if (res.status !== 200) {
-                    throw new Error('Failed to fetch status');
-                }
-                return res.json();
+                // if (res.status !== 200) {
+                //     throw new Error('Failed to fetch status');
+                // }
+
+                console.log(res.json())
+
+                return "something";
             })
             .then(resData => {
-                let newArray = resData
+                let newArray = resData;
                 
                 
 
