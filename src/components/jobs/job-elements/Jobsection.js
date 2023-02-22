@@ -31,7 +31,11 @@ const Jobsection = (props) => {
     const fetchJobsHandler = useCallback(async () => {
 
         //Here we request and receive the jobs from the backend
-        fetch('test-zippia-backend.vercel.app/test/jobs')
+        fetch('https://test-zippia-2.herokuapp.com/test/jobs',
+            {
+                mode: 'no-cors'
+            }
+        )
             .then(res => {
                 if (res.status !== 200) {
                     throw new Error('Failed to fetch status');
