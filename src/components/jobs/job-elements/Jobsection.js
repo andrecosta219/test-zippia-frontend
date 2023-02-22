@@ -41,7 +41,8 @@ const Jobsection = (props) => {
                 //     throw new Error('Failed to fetch status');
                 // }
 
-                console.log(res.json())
+                const vari = res.json();
+                console.log(vari);
 
                 return "something";
             })
